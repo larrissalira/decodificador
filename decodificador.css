@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@700&family=Keania+One&display=swap');
+
+body {     
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color:rgb(255, 255, 255);
+    font-family: 'Caudex', serif, 'Keania One', 'cursive';
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 0px 0px 35px rgb(37, 39, 38);
+    border-radius: 25px;
+    text-align: center;
+    margin: 20px;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(72, 73, 73, 0.39);
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgb(37, 39, 38);
+    width: 800px;
+    height: 450px;
+    padding: 35px 20px;
+    font-family: 'Caudex', serif, 'Keania One', 'cursive';
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.containerForm{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    width: 570px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+label {
+    margin: 0px;
+    font-family: 'Caudex', serif, 'Keania One';
+    font-size: 17px;
+}
+#retorno {
+    flex-direction: column;
+    border-radius: 25px;
+    font-size: 17px;
+    border: 3px;
+    border-style: solid;
+}
+
+#textoCodificar, #textoFinal {
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 25px;
+    border-radius: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#escolhaQual {
+    width: 180px;
+    height: 25px;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#divRadio
+{
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: none;
+    width: 280px;    
+}
+
+#divBotao
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.botoes {
+    width: 240px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(5, 5, 5);
+    font-family: serif, 'Keania One';
+    cursor:pointer;
+}
+
+.botoes:hover {
+    color: white;
+    background-color: black;
+}
+
+.direitosTexto{
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Caudex', serif, 'Keania One';
+    font-weight: bold;
+    font-size: 14px;   
+}

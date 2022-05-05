@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./decodificador.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>MENSAGEM OCULTA</h1>
+    </header>
+
+    <main>
+      <form>
+        <div class="containerForm" id="containerFormEscolha">
+          <label for="escolhaQual">Selecione sua opção:</label>
+        </div>
+        <div class="radios">
+          <div class="containerForm" id="divRadio">
+            <input type="radio" name="criptografia" id="cifradecesar" value="Cifra de Cesar" checked/>Cifra de Cesar
+            <input type="radio" name="criptografia" id="base64" value="Base 64"/>Base 64
+          </div>
+
+          <div class="containerForm" id="divRadio">
+            <input type="radio" name="opcao" id="criptografar" value="Codificar" checked/>Codificar
+            <input type="radio" name="opcao" id="descriptografar" value="Decodificar"/>Decodificar
+          </div>
+        </div>
+
+        <div class="containerForm" id="divBotao">
+          <input type="button" id="codificar" class="botoes" value="CONFIRMAR OPÇÃO" onclick="confirmar()"/>
+        </div>
+
+        <div class="containerForm" id="textoCodificar">
+          <label for="mensagem" id="texto1">Digite a mensagem para codificar/decodificar:</label>
+          <input type="text" name="texto1" id="mensagem"/>
+        </div>
+
+        <div class="containerForm" id="senhaBox">
+          <label for="resultado" id="texto2">Senha:</label>
+          <input type="number" name="texto2" id="shiftInput"/>   
+        </div>
+
+        <div class="containerForm" id="textoFinal">
+          <label for="resultado" id="texto3">Mensagem codificada/descodificada:</label>
+          <input type="text" name="texto3" id="retorno"/>   
+        </div>
+
+        <div class="containerForm" id="divBotao">
+          <input type="button" id="executar" class="botoes" value="EXECUTAR"/>
+        </div>
+       
+      </form>
+    </main>
+
+    <script src="decodificador.js" defer></script>
+    <footer>
+      <p class="direitosTexto">
+        &copy; Todos os direitos reservados a Larrissa Lira.
+      </p>
+    </footer>
+  </body>
+</html>
